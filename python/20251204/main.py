@@ -23,7 +23,7 @@ async def on_message(message):
     if message.author.bot:
         return
 
-    if "魚魚" in message.content.lower() and "咕嚕咕嚕" in message.content.lower():
+    if "小蝸牛" in message.content.lower() and "咕嚕咕嚕" in message.content.lower():
         await message.channel.send(f"哈囉 {message.author.display_name}!")
         
     await bot.process_commands(message)
