@@ -1,7 +1,9 @@
+#把需要的Library匯入
 import discord
 from discord.ext import commands
 import os
 from dotenv import load_dotenv
+
 
 load_dotenv()
 token = os.getenv("TOKEN")
