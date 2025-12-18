@@ -10,6 +10,11 @@ from dotenv import load_dotenv
 load_dotenv()
 token = os.getenv("TOKEN")
 
+# Feature flag: Enable Claude Haiku 4.5 for all clients
+enable_claude_haiku_4_5 = os.getenv("ENABLE_CLAUDE_HAIKU_4_5", "false").strip().lower() in ("1", "true", "yes")
+bot_enable_msg = f"Enable Claude Haiku 4.5: {enable_claude_haiku_4_5}"
+print(bot_enable_msg)
+
 intents = discord.Intents.default()
 intents.message_content = True
 intents.guild_messages = True
