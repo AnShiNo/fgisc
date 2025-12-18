@@ -1,0 +1,11 @@
+# Ignore local environment files
+python/20251204/.env
+
+# Bytecode
+__pycache__/
+*.pyc
+
+# Editor files
+.vscode/
+Thumbs.db
+desktop.ini
